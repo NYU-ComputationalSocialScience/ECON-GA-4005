@@ -1,0 +1,218 @@
+%\documentclass[11pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%% Stock Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,pdftex,twoside,letterpaper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{layout}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=black,urlcolor=blue,bookmarks=false,pdfstartview={FitV}]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%Margins%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin=1.0in]{geometry}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{.09in}
+\raggedbottom
+
+%%%%%%%%%%%%%%%%%%%%Tighten up the lists%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\OLDdescription\description
+\renewcommand\description{\OLDdescription\setlength{\itemsep}{-2mm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%Exam class formating%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\partlabel}{\thepartno.}
+\renewcommand{\questionshook}{\setlength{\itemsep}{0.2in}}
+\renewcommand{\partshook}{\setlength{\leftmargin}{0.2in}}
+\renewcommand\familydefault{\sfdefault}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Let Backus fight the good fight, I'm going with LN%%%%%%%%%%%%%%%%%%%
+\renewcommand{\log}{\ln}
+
+%%%%%%%%%%%%%%%%%%%%%%Headers and Footers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headandfoot}
+
+\runningheadrule
+\firstpageheadrule
+\runningheader{ML}{}{Syllabus: ECON-GA 4005}
+\runningfooter{}{}{}
+
+\begin{document}
+
+  \centerline{\Large\bf Syllabus: Machine Learning and Algorithms for CSS}
+  \vspace{3mm}
+  \centerline{\large\bf ECON-GA 4005 $|$ Spring 2022}
+  \vspace{3mm}
+  \centerline{\bf Revised: \today}
+
+  \bigskip
+
+  When applied correctly, "machine learning" tools allow individuals to approximate complicated
+  outcomes in the real world. However, when applied carelessly, these tools generate misleading
+  findings. This course covers supervised learning (both regression and classification),
+  reinforcement learning, and model selection via validation procedures. This course prepares
+  students to apply classical and cutting-edge machine learning techniques to problems in the
+  social sciences.
+
+  The course presents a principled approach that adheres to best practices and encourages
+  understanding and transparency.
+
+  This class will use Python, a popular high-level computer language, that is being used widely
+  across many fields. ``High-level'' means it's less painful than most (the hard work is done by
+  the language), but it's a serious language with extensive capabilities.
+
+  \subsubsection*{About the instructors}
+
+    This course is co-taught by three instructors: Chase Coleman (cgc332@nyu.edu), Spencer Lyon
+    (sgl290@nyu.edu), and Thomas Sargent (ts43@nyu.edu).
+
+    Office hours: By appointment
+
+  \subsubsection*{Where and When}
+
+    Meeting times: Thursday 6:00 pm - 8:50 pm (Eastern Standard Time)
+
+    Meeting place: \href{https://gather.town/app/I193ly4g2SLPa7Gy/ECON-GA-4005}{Gather} (password: nyu)
+
+  \section*{Requirements}
+
+    The main prerequisites for this course are a solid mastery of the concepts covered in the
+    Mathematical Foundations for Computational Social Science and the Data Skills for Computational
+    Social Science courses. See the corresponding course syllabi for a list of topics covered in
+    these courses.
+
+    A willingness to consult Wikipedia for math and statistics concepts will also be helpful for
+    students.
+
+  \section*{Getting help}
+
+    This course is meant to be collaborative and to have a strong support system to help you when
+    you run into problems. Please use the discussion board or other forms of communication to
+    communicate with your classmates and ask questions/help each other.
+
+    The bottom line:  {\bf If you're stuck, ask for help\/}.
+
+    Really.  Don't be a hero, ask for help.
+
+  \section*{Course materials and assignments}
+
+    All course materials will be posted on \href{https://github.com/NYU-ComputationalSocialScience/ECON-GA-4005}{Github}.
+
+    Assignments, including your exam, will be assigned through Brightspace
+
+  \section*{Deliverables and grades}
+
+    Graded work includes:
+
+    \begin{itemize}
+      \item {\bf Code Practice (30\%)} There will be several homework assignments throughout the
+            semester. We find that people who finish these assignments tend to keep up
+            with the material better and these are easy points to get in terms of grades.
+      \item {\bf Exam (20\%)} There will be one exam. The exam will be take home and you may use
+            your notes and the internet. The only exception is that we'd ask that you don't ask
+            the exam questions in online forums and that you don't speak with your classmates about
+            the exam.
+      \item {\bf Project (40\%)} The most important deliverable, both in terms of your grade and
+            what you will learn, is a project that applies the tools from class to some question
+            in the social sciences.
+      \item {\bf Course participation (10\%)} We expect students to participate in class. If you have
+            questions, don't be shy about asking them. The discussion forums are a great place to
+            participate in class as well
+    \end{itemize}
+
+
+    {\bf Due dates} will be posted on the Brightspace.
+
+    {\bf Dates are not negotiable. Anything handed in late will get a grade of zero.}
+
+    {\bf All your work should be clean and professional.} We expect your math to be written in
+    LaTeX for this course and expect your code to conform to good code habits.
+
+    {\bf Final grades\/} will be computed from
+
+    \begin{center}
+      \begin{tabular}{ll}
+        Participation / Professionalism & 10\% \\
+        Code practice & 30\% \\
+        Exam \#1        & 20\% \\
+        Project        & 40\% \\
+      \end{tabular}
+    \end{center}
+
+    Final grades are not subject to any fixed distribution or curve. The number of A grades, for
+    example, will depend only on your performance in the course.
+
+\section*{Recommended work habits}
+
+  Python is not something you can learn from reading a book and attending lectures. You need to
+  {\bf write programs}... The more the better. Think about how you'd learn to play basketball
+  or soccer; reading and listening to lectures aren't enough, you need to do it. We'll do a lot of
+  programming in class, but it's {essential} that you follow up outside of class.
+
+\section*{Pacing}
+
+  The course is designed to be cover material at whatever pace the class is capable of. The topics
+  should take roughly one week each, but we can scale that up or down as needed. If you're an expert,
+  don't worry, we'll cover a lot of material either way.
+
+\section*{Other questions}
+
+  We encourage students who have questions to typically post their questions on the Brightspace
+  site so that answers can be referenced by other students. If no answer is provided in a reasonable
+  amount of time (i.e. wait at least 24 hours), you may email us to remind us of the question. If you
+  have a question about a matter that should be kept private, please don't hesitate to reach out
+  directly by email.
+
+
+\section*{Policies}
+
+\begin{itemize}
+  \item \textbf{General Behavior.} The School expects that students will conduct themselves with
+        respect and professionalism toward faculty, students, and others present in class and will
+        follow the rules laid down by the instructor for classroom behavior.  Students who fail to
+        do so may be asked to leave the classroom.
+
+  \item \textbf{Collaboration on Graded Assignments.} You may discuss assignments with anyone
+        (in fact, we encourage it), but anything you submit, including your code, should be your
+        own. Exams should be entirely your own work. Violation of this policy will result in a
+        failing grade for the course.
+
+  \item \textbf{Academic Integrity.}
+
+  \begin{itemize}
+    \item Integrity is critical to the learning process and to all that we do here at NYU. As
+          members of our community, all students agree to abide by the NYU Student Code of Conduct,
+          which includes a commitment to:
+    \item Exercise integrity in all aspects of one's academic work including, but not limited to,
+          the preparation and completion of exams, papers and all other course requirements by not
+          engaging in any method or means that provides an unfair advantage.
+    \item Clearly acknowledge the work and efforts of others when submitting written work as one's
+          own. Ideas, data, direct quotations (which should be designated with quotation marks),
+          paraphrasing, creative expression, or any other incorporation of the work of others
+          should be fully referenced.
+    \item Refrain from behaving in ways that knowingly support, assist, or in any way attempt to
+          enable another person to engage in any violation of the Code of Conduct. Our support also
+          includes reporting any observed violations of this Code of Conduct or other School and
+          University policies that are deemed to adversely affect the NYU community.
+  \end{itemize}
+
+  The entire Student \href{https://www.nyu.edu/about/policies-guidelines-compliance/compliance/code-of-ethical-conduct.html}{Code of Conduct}
+  applies to all students enrolled in NYU courses. \textbf{Any violation of the a policies
+  pertaining to Academic Integrity will result in a failing grade for the course.}
+\end{itemize}
+
+\subsubsection*{Students with disabilities}
+
+  If you have a qualified disability that requires academic accommodation during this course,
+  please contact the Moses Center for Students with Disabilities (CSD, 212-998-4980) and ask them
+  to send me a letter verifying your registration and outlining the accommodation they recommend.
+  If you need to take an exam at the CSD, you must submit a completed Exam Accommodations Form to
+  them at least one week prior to the scheduled exam time to be guaranteed accommodation.
+
+\end{document}
