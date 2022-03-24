@@ -291,3 +291,6 @@ TSWLatexianTemp*
 #*Notes.bib
 *.parquet
 *.db
+
+Handouts/L12_backprop/fashion_mnist_model.h5
+Handouts/L12_backprop/fashion_mnist_logs
