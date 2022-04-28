@@ -1,0 +1,8 @@
+[deps]
+BasisMatrices = "08854c51-b66b-5062-a90d-8e7ae4547a49"
+Colors = "5ae59095-9a9b-59fe-a467-6f913c188581"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+PlotlyBase = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
+QuantEcon = "fcd29c91-0bd7-5a09-975d-7ac3f643a60c"
